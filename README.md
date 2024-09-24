@@ -1,6 +1,8 @@
 
 # Introduction
 
+I set up a mini-security operations center as a honeynet on Microsoft Azure. After configuring multiple insecure VM's and services on Azure, I configured the service's security logs to be forwarded and ingested by the native SIEM, Microsoft Sentinel. Afterward, I monitored the vulnerable network for 24 hours and recorded events or incidents. After the 24 hours, I went about securing the VMs and network, at which point I monitored the network for another 24 hours to observe the differences. 
+
 # Azure-SIEM
 ![AzureMap](https://github.com/user-attachments/assets/348d83c7-6c8b-4054-9c00-e059305402b7)
 
