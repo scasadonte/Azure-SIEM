@@ -1,7 +1,7 @@
 
 # Introduction
 
-I set up a mini-security operations center (honeynet) on Microsoft Azure in this project. After configuring multiple insecure VMs and services on Azure, I directed the VMs and services' security and event logs to be forwarded to Azure's Log Analytics Workspace to be processed by the platform's native SIEM, Microsoft Sentinel. I configured Sentinel to record incidents and trigger events, using live traffic data to generate attack maps based on the attackers' geographic location. After configuring the network and resources, I monitored the vulnerable network for 24 hours. After analyzing and documenting the results, I secured the VMs and network per Nist 800-53, at which point I monitored the network for another 24 hours to observe the differences. 
+I set up a mini-security operations center (honeynet) on Microsoft Azure in this project. After configuring multiple insecure VMs and services on Azure, I directed the VMs and services' security and event logs to be forwarded to Azure's Log Analytics Workspace to be processed by the platform's native SIEM, Microsoft Sentinel. I configured Sentinel to record incidents and trigger events, using live traffic data to generate attack maps based on the attackers' geographic location. After configuring the network and resources, I monitored the vulnerable network for 24 hours. After analyzing and documenting the results, I secured the VMs and network per NIST 800-53, at which point I monitored the network for another 24 hours to observe the differences. 
 
 # Network Topology
 ![AzureMap](https://github.com/user-attachments/assets/348d83c7-6c8b-4054-9c00-e059305402b7)
