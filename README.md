@@ -39,10 +39,6 @@ To enhance the network security, I reconfigured the Network Security Groups to b
 
 These are the metrics gathered after running the secure network for 24 hours. 
 
-# Results
-
-![image](https://github.com/user-attachments/assets/2d4f9f70-2aed-4289-acb4-56d9b8785629)
-
 # Conclusion
 
 
