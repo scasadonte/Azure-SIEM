@@ -1,7 +1,7 @@
 
 # Introduction
 
-I set up a mini-security operations center (honeynet) on Microsoft Azure in this project. After configuring multiple insecure VMs and services on Azure, I directed the VMs and services' security and event logs to be forwarded to Azure's Log Analytics Workspace to be processed by the platform's native SIEM, Microsoft Sentinel. I configured Sentinel to record incidents and trigger events, using live traffic data to generate attack maps based on the attackers' geographic location. After configuring the network and resources, I monitored the vulnerable network for 24 hours. After analyzing and documenting the results, I secured the VMs and network, at which point I monitored the network for another 24 hours to observe the differences. 
+I set up a mini-security operations center (honeynet) on Microsoft Azure in this project. After configuring multiple insecure VMs and services on Azure, I directed the VMs and services' security and event logs to be forwarded to Azure's Log Analytics Workspace to be processed by the platform's native SIEM, Microsoft Sentinel. I configured Sentinel to record incidents and trigger events, using live traffic data to generate attack maps based on the attackers' geographic location. After configuring the network and resources, I monitored the vulnerable network for 24 hours. After analyzing and documenting the results, I secured the VMs and network per Nist 800-53, at which point I monitored the network for another 24 hours to observe the differences. 
 
 # Network Topology
 ![AzureMap](https://github.com/user-attachments/assets/348d83c7-6c8b-4054-9c00-e059305402b7)
@@ -40,6 +40,10 @@ To enhance the network security, I reconfigured the Network Security Groups to b
 These are the metrics gathered after running the secure network for 24 hours. 
 
 # Conclusion
+
+In this project, I learned to leverage Microsoft Azure's native resources to set up and configure a Mini-Security operations center via their SIEM and Microsoft Sentinel. By doing this project, I learned how to configure these resources, forward their logs to the Log Analytics Workspace, and Set up the SIEM to monitor live traffic while recording incidents and security events. I also learned how to harden the system, isolate critical resources, and remediate vulnerabilities through best practices, as published in NIST 800-53. These changes yielded a positive effect, as it can be seen in the recorded metrics that the number of events and incidents was reduced dramatically. In the future, I would like to do this project again and further explore the capabilities of Microsoft Sentinel. 
+
+
 
 
 
