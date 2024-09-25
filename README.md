@@ -6,6 +6,15 @@ I set up a mini-security operations center (honeynet) on Microsoft Azure in this
 # Network Topology
 ![AzureMap](https://github.com/user-attachments/assets/348d83c7-6c8b-4054-9c00-e059305402b7)
 
+When configuring the network, the following data was used:
+* Syslog (Linux VM)
+* SecurityEvents (Windows VM)
+* SecurityAlert (Log Analytics Alerts)
+* SecurityIncident (Incidents recorded by Microsoft Sentinel)
+* AzureNetworkAnalytics_CL (Malicious Flows from the Internet)
+
+
+
 
 
 # Before Securing Environment
