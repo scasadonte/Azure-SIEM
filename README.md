@@ -13,8 +13,9 @@ When configuring the network, the following data was used:
 * SecurityIncident (Incidents recorded by Microsoft Sentinel)
 * AzureNetworkAnalytics_CL (Malicious Flows from the Internet)
 
+For the initial phase of the project, I deliberately made the system insecure by configuring the Network Security Groups and firewalls of both VMs to allow all incoming traffic. Additionally, I deployed resources such as the Key Vault and Storage Account with public endpoints, leaving them exposed to the Internet.
 
-
+To enhance the network security, I reconfigured the Network Security Groups to block all incoming traffic except for authorized users based on the documented results. I also secured the network resources by placing them within a new private network and setting up private endpoints for all resources. As an additional measure, I implemented a new Network Security Group to block all traffic except for resources located within the VLAN. This ensured that the resources could still forward logs and interact with other resources within the network, while no longer being exposed to the Internet.
 
 
 # Before Securing Environment
