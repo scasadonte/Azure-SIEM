@@ -23,17 +23,21 @@ For the project's initial phase, I deliberately made the system insecure by conf
 
 <img width="1001" alt="Screenshot 2024-09-22 at 5 53 03 PM" src="https://github.com/user-attachments/assets/71140477-ecc5-436b-bcc2-d01f9ff5d24d">
 
-
-
-
+<br></br>
 
 ![image](https://github.com/user-attachments/assets/eaa53b45-79ec-4840-9740-cf1a1de8df3f)
 
-# After Securing Enviornment
+These are the metrics gathered after running the vulnerable network for 24 hours.
 
-To enhance the network security, I reconfigured the Network Security Groups to block all incoming traffic except for authorized users based on the documented results. I also secured the network resources by placing them within a new private network and setting up private endpoints for all resources. As an additional measure, I implemented a new Network Security Group to block all traffic except for resources located within the VLAN. This ensured that the resources could still forward logs and interact with other resources within the network, while no longer being exposed to the Internet.
+# After Securing Environment
+
+To enhance the network security, I reconfigured the Network Security Groups to block all incoming traffic except for authorized users based on the documented results. I also secured the network resources by placing them within a new private network and setting up private endpoints for all resources. As an additional measure, I implemented a new Network Security Group to block all traffic except for resources located within the VLAN. This ensured that the resources could still forward logs and interact with other resources within the network while no longer being exposed to the Internet.
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/12a06aaa-05a1-44ea-88bf-edeca7229af8)
+
+These are the metrics gathered after running the secure network for 24 hours. 
 
 # Results
 
