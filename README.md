@@ -13,12 +13,9 @@ When configuring the network, the following data was used:
 * SecurityIncident (Incidents recorded by Microsoft Sentinel)
 * AzureNetworkAnalytics_CL (Malicious Flows from the Internet)
 
-For the initial phase of the project, I deliberately made the system insecure by configuring the Network Security Groups and firewalls of both VMs to allow all incoming traffic. Additionally, I deployed resources such as the Key Vault and Storage Account with public endpoints, leaving them exposed to the Internet.
-
-To enhance the network security, I reconfigured the Network Security Groups to block all incoming traffic except for authorized users based on the documented results. I also secured the network resources by placing them within a new private network and setting up private endpoints for all resources. As an additional measure, I implemented a new Network Security Group to block all traffic except for resources located within the VLAN. This ensured that the resources could still forward logs and interact with other resources within the network, while no longer being exposed to the Internet.
-
-
 # Before Securing Environment
+
+For the project's initial phase, I deliberately made the system insecure by configuring the Network Security Groups and firewalls of both VMs to allow all incoming traffic. Additionally, I deployed resources such as the Key Vault and Storage Account with public endpoints, exposing them to the Internet.
 
 <img width="1274" alt="Screenshot 2024-09-22 at 5 52 07 PM" src="https://github.com/user-attachments/assets/538b432d-b604-4666-9047-9cbc32711d8e">
 
@@ -33,6 +30,8 @@ To enhance the network security, I reconfigured the Network Security Groups to b
 ![image](https://github.com/user-attachments/assets/eaa53b45-79ec-4840-9740-cf1a1de8df3f)
 
 # After Securing Enviornment
+
+To enhance the network security, I reconfigured the Network Security Groups to block all incoming traffic except for authorized users based on the documented results. I also secured the network resources by placing them within a new private network and setting up private endpoints for all resources. As an additional measure, I implemented a new Network Security Group to block all traffic except for resources located within the VLAN. This ensured that the resources could still forward logs and interact with other resources within the network, while no longer being exposed to the Internet.
 
 ![image](https://github.com/user-attachments/assets/12a06aaa-05a1-44ea-88bf-edeca7229af8)
 
